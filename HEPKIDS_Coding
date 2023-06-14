@@ -35,24 +35,24 @@
 
         main{
             background-image: url('/Kids_Coding/HEPKIDS_Cover_Image_1.jpg');
-            background-size: 80% 110%;
-            height: 50rem;
+            background-size: 80% 100%;
+            height: 30rem;
             border: solid 0px black;
         }
 
         .banner_container{
             background-color: rgba(73, 96, 223, 0.703);
-            height: 30em;
+            /*height: 40em;*/
         }
 
-        .sales_container{
+       /* .sales_container{
             display: flex;
             row-gap: 2em;
             column-gap: 20em;
             border: solid 0px gray
-        }
+        } */
 
-        #banner_text1{
+        /*#banner_text1{
             font-size: 3em;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color: white; 
@@ -67,17 +67,94 @@
             color: white; 
             margin-right: 4em;
 
-        }
+        }*/
 
         /*img{
             width: 300px;
             height: 520px;
         }*/
+        .wrapper{
+            display: flex;
+            row-gap: 2em;
+            column-gap: 28em;
 
-        p {
-  
-}
+   
+       
+        }
+        #banner_text1{
+        border: solid 0px black;
+        font-size: 2.5em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        text-align: center;
+        padding: 0em;
+        max-width: 10em;
+        max-height: 8em;
+        margin-left: 1em;
+        margin-top: 2em;
+       /* padding-top: 1em;*/
+    }
 
+    #banner_text2{ 
+        border: solid 0px black;
+        font-size: 2.5em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        text-align: center;
+        padding: 0em;
+        max-width: 20em;
+        max-height: 8em;
+        margin-right: 1em;
+        margin-top: 2em;
+    }
+
+    .stat{
+        display: flex;
+        row-gap: 2em;
+        column-gap: 8em;
+        font-size: 2rem;
+        color: purple;
+        margin-top: 1em;
+        margin-left: 2.5em;
+        margin-right: 1em;
+
+    }
+
+    .stat> div{
+        border: solid 0px rgb(139, 83, 0);
+        border-radius: 15%;
+        width: 8em;
+        height: 5em;
+        text-align: center;
+        
+
+    }
+
+    .stat>div>span {
+        font-size: 2em;
+    }
+
+    .button1{
+        margin-top: 2em;
+        margin-left: 22em;
+        width: 6em;
+        height: 1.5em;
+        background-color: orange;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 3em;
+        font-weight: 500;
+        border:  solid 0px orange;
+        border-radius: 10%;
+
+    }
+
+    #reserve{
+        margin-left: 59em;
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
         
     </style>
 
@@ -93,18 +170,22 @@
         <nav></nav>
     </section>
     <main class = "banner_container">
-        <!--<img src="/Kids_Coding/HEPKIDS_Cover_Image_1.jpg"> -->
-        
-
-        <section class="sales_container"> 
-
+        <!--<img src="/Kids_Coding/HEPKIDS_Cover_Image_1.jpg"> -->   
+        <div class = wrapper>
                 <div id = "banner_text1" >Private Coding Classes for Kids and Teens</div>
                <!-- <p id = "banner_text2">At HEPKIDS CODING, we passionately teach kids coding to solve real problems</p> -->
-                <p id = "banner_text2">MIT & Cambridge-trained tutors teaching kids real coding</p>
-           
-        </section>
-
+                <div id = "banner_text2">MIT & Cambridge-trained tutors teaching kids real coding</div>
+                
+        </div>
+        <a href = ""><button class="button1">Enroll Now</button></a>
+        <a href= ""><p id = "reserve"> Reserve your spot!</p></a>
     </main>
+    <div class="stat">
+        <div><span>Doctorate</span><br>Tutors' Highest Education</div>
+        <div> <span>100's</span><br> of Happy Students and Parents</div>
+        <div><span>15 Years</span><br>Average Tutor's Experience</div>
+        <!--<div><span>Tutors are parents</span><br> of young kids</div>-->
+    </div>
 
 
 
