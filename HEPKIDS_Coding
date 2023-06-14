@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Coding for Kids</title>
+
+    <style>
+        body{
+            margin-top: 0rem;
+            margin-left: 0rem;
+            margin-right: 0rem;
+            background-color:;
+        }
+        .topmost_box{
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 0em;
+            column-gap: 60em;
+            font-size: 0.8rem;
+            /*background-color: tomato;*/
+            color: darkgreen;
+            padding-left: 2em;
+            padding-right: 2em;
+            max-height: 2rem;
+            /*border: solid 2px black;*/
+            margin: 0;
+        }
+
+        .nav_container{
+            background-color: rgb(222, 201, 9);
+            height: 8em;
+        }
+
+        .banner_container{
+            background-color: lightblue;
+            height: 30em;
+        }
+
+        .sales_container{
+            display: flex;
+            row-gap: 200em;
+            column-gap: 2em;
+            border: solid 1px gray
+            
+
+        }
+
+        .sales_container > p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 3em;
+
+        }
+
+        
+    </style>
+
+</head> 
+
+<body>
+    <header class="topmost_box">
+        <p id = "top_text1">Welcome to HEPKIDS Coding. Summer Class</p>
+        <p id = "top_text2">Welcome to HEPKIDS Coding. Summer Class</p>
+    
+    </header>
+    <section class = "nav_container">
+        <nav></nav>
+    </section>
+    <main class = "banner_container">
+        <section class="sales_container"> 
+
+                <h1 style="background-color: aqua; margin-left: 4em;">Private Coding Classes for Kids and Teens</h1>
+                <p style="background-color: aqua; margin-right: 4em;">At HEPKIDS CODING, we passionately teach kids coding to solve real problems</p>
+           
+        </section>
+
+    </main>
+
+
+
+</body>
+
+
+</html>
