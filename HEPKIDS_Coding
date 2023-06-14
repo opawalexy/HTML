@@ -33,6 +33,13 @@
             height: 8em;
         }
 
+        main{
+            background-image: url('/Kids_Coding/HEPKIDS_Cover_Image_1.jpg');
+            background-size: 80% 110%;
+            height: 50rem;
+            border: solid 0px black;
+        }
+
         .banner_container{
             background-color: rgba(73, 96, 223, 0.703);
             height: 30em;
@@ -42,7 +49,7 @@
             display: flex;
             row-gap: 2em;
             column-gap: 20em;
-            border: solid 1px gray
+            border: solid 0px gray
         }
 
         #banner_text1{
@@ -50,6 +57,7 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color: white; 
             margin-left: 4em;
+            margin-top: 0.5em;
 
         }
 
@@ -60,6 +68,15 @@
             margin-right: 4em;
 
         }
+
+        /*img{
+            width: 300px;
+            height: 520px;
+        }*/
+
+        p {
+  
+}
 
         
     </style>
@@ -76,11 +93,14 @@
         <nav></nav>
     </section>
     <main class = "banner_container">
+        <!--<img src="/Kids_Coding/HEPKIDS_Cover_Image_1.jpg"> -->
+        
 
         <section class="sales_container"> 
 
                 <div id = "banner_text1" >Private Coding Classes for Kids and Teens</div>
-                <p id = "banner_text2">At HEPKIDS CODING, we passionately teach kids coding to solve real problems</p>
+               <!-- <p id = "banner_text2">At HEPKIDS CODING, we passionately teach kids coding to solve real problems</p> -->
+                <p id = "banner_text2">MIT & Cambridge-trained tutors teaching kids real coding</p>
            
         </section>
 
