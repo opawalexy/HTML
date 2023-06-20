@@ -1,446 +1,446 @@
 <html>
+
 <head>
-<style>
-body{background: #1E1E1E;
-box-sizing: border-box;
-}
+    <style>
+        body {
+            background: #1E1E1E;
+            box-sizing: border-box;
+        }
 
-.heroSection{position: relative;
-width: 1440px;
-height: 1024px;
-background: #FFFFFF;
-border: solid 2px red;
-}
+        .heroSection {
+            position: relative;
+            width: 1440px;
+            height: 1024px;
+            background: #FFFFFF;
+            border: solid 2px red;
+        }
 
-.header1{
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 140px;
+        .header1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 140px;
 
-position: absolute;
-width: 1150px;
-height: 44px;
-left: calc(50% - 1150px/2 + 0.09px);
-top: 12px; 
-border: solid 2px blue;
-}
+            position: absolute;
+            width: 1150px;
+            height: 44px;
+            left: calc(50% - 1150px/2 + 0.09px);
+            top: 12px;
+            border: solid 2px blue;
+        }
 
-.logo{
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 8px;
-gap: 8px;
-padding-top: 20px;
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 8px;
+            gap: 8px;
+            padding-top: 20px;
 
-width: 155px;
-height: 40px;
+            width: 155px;
+            height: 40px;
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-border: solid 2px green;
-}
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            border: solid 2px green;
+        }
 
-#logo_img1 {
-width: 24px;
-height: 24px;
+        #logo_img1 {
+            width: 24px;
+            height: 24px;
 
-/* Primary/300 - base */
+            /* Primary/300 - base */
 
-background: #0065FE;
+            background: #0065FE;
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
-}
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
 
-#logo_img2 {
-width: 0px;
-height: 24px;
+        #logo_img2 {
+            width: 0px;
+            height: 24px;
 
-/* Primary/300 - base */
+            /* Primary/300 - base */
 
-background: #0065FE;
-/* Primary/300 - base */
+            background: #0065FE;
+            /* Primary/300 - base */
 
-border: 2px solid #0065FE;
+            border: 2px solid #0065FE;
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 1;
-flex-grow: 0;
-}
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
 
-#scissor{
-/* SCISSOR */
+        #scissor {
+            /* SCISSOR */
 
 
-width: 99px;
-height: 24px;
+            width: 99px;
+            height: 24px;
 
-/* H2/Bold */
+            /* H2/Bold */
 
-font-family: 'Gilroy-Bold';
-font-size: 24px;
-line-height: 32px;
-/* or 133% */
+            font-family: 'Gilroy-Bold';
+            font-size: 24px;
+            line-height: 32px;
+            /* or 133% */
 
-display: flex;
-align-items: center;
+            display: flex;
+            align-items: center;
 
-/* Primary/300 - base */
+            /* Primary/300 - base */
 
-color: #0065FE;
+            color: #0065FE;
 
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 2;
-flex-grow: 0;
-}
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+        }
 
-.nav{
-/* Frame 1000001643 */
+        .nav {
+            /* Frame 1000001643 */
 
 
-/* Auto layout */
+            /* Auto layout */
 
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 40px;
 
-width: 504px;
-height: 24px;
-list-style-type: none;
-border: solid 1px green;
+            width: 504px;
+            height: 24px;
+            list-style-type: none;
+            border: solid 1px green;
 
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 1;
-flex-grow: 0;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
 
-}
+        }
 
-#myurl {
-width: 90px;
-height: 22px;
+        #myurl {
+            width: 90px;
+            height: 22px;
 
-font-family: 'Gilroy-Medium';
-font-size: 18px;
-line-height: 21px;
+            font-family: 'Gilroy-Medium';
+            font-size: 18px;
+            line-height: 21px;
 
-/* Primary/300 - base */
+            /* Primary/300 - base */
 
-color: #0065FE;
+            color: #0065FE;
 
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
-}
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
 
-#features {
-/*position: absolute;
-width: 72px;
-height: 22px;
-left: 109px;
-top: 1px;*/
+        #features {
+            /*position: absolute;
+            width: 72px;
+            height: 22px;
+            left: 109px;
+            top: 1px;*/
 
-font-family: 'Gilroy-Medium';
-font-size: 18px;
-line-height: 21px;
+            font-family: 'Gilroy-Medium';
+            font-size: 18px;
+            line-height: 21px;
 
-/* Text Color/Main text */
+            /* Text Color/Main text */
 
-color: #141414;
-}
+            color: #141414;
+        }
 
-#pricing{
-width: 56px;
-height: 22px;
+        #pricing {
+            width: 56px;
+            height: 22px;
 
-font-family: 'Gilroy-Medium';
-font-size: 18px;
-line-height: 21px;
+            font-family: 'Gilroy-Medium';
+            font-size: 18px;
+            line-height: 21px;
 
-/* Text Color/Main text */
+            /* Text Color/Main text */
 
-color: #141414;
+            color: #141414;
 
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 2;
-flex-grow: 0;
-}
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+        }
 
-#analytics{
-width: 76px;
-height: 22px;
+        #analytics {
+            width: 76px;
+            height: 22px;
 
-font-family: 'Gilroy-Medium';
-font-size: 18px;
-line-height: 21px;
+            font-family: 'Gilroy-Medium';
+            font-size: 18px;
+            line-height: 21px;
 
-/* Text Color/Main text */
+            /* Text Color/Main text */
 
-color: #141414;
+            color: #141414;
 
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 3;
-flex-grow: 0;
-}
+            flex: none;
+            order: 3;
+            flex-grow: 0;
+        }
 
-#faq{
-width: 43px;
-height: 22px;
+        #faq {
+            width: 43px;
+            height: 22px;
 
-font-family: 'Gilroy-Medium';
-font-size: 18px;
-line-height: 21px;
+            font-family: 'Gilroy-Medium';
+            font-size: 18px;
+            line-height: 21px;
 
-/* Text Color/Main text */
+            /* Text Color/Main text */
 
-color: #141414;
+            color: #141414;
 
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 4;
-flex-grow: 0;
-}
+            flex: none;
+            order: 4;
+            flex-grow: 0;
+        }
 
-.login{
-border: solid 1px violet;
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 24px;
+        .login {
+            border: solid 1px violet;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 24px;
 
-width: 211px;
-height: 44px;
+            width: 211px;
+            height: 44px;
 
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 2;
-flex-grow: 0;
-}
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+        }
 
-.login > div{
-width: 45px;
-height: 20px;
+        .login>div {
+            width: 45px;
+            height: 20px;
 
-font-family: 'Gilroy-SemiBold';
-font-size: 16px;
-line-height: 19px;
+            font-family: 'Gilroy-SemiBold';
+            font-size: 16px;
+            line-height: 19px;
 
-/* Primary/300 - base */
+            /* Primary/300 - base */
 
-color: #0065FE;
+            color: #0065FE;
 
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
-}
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
 
-.login > button {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 12px 24px;
-gap: 10px;
+        .login>button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 24px;
+            gap: 10px;
 
-width: 142px;
-height: 44px;
+            width: 142px;
+            height: 44px;
 
 
-/* Primary/300 - base */
+            /* Primary/300 - base */
 
-background: #0065FE;
-border-radius: 100px;
-border: 0px;
-color: white;
+            background: #0065FE;
+            border-radius: 100px;
+            border: 0px;
+            color: white;
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 1;
-flex-grow: 0;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
 
 
-}
+        }
 
-.optimize_section{
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-gap: 32px;
+        .optimize_section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            gap: 32px;
 
-position: absolute;
-width: 948px;
-height: 389px;
-left: calc(50% - 948px/2);
-top: 162px;
-border: solid blue 1px;
+            position: absolute;
+            width: 948px;
+            height: 389px;
+            left: calc(50% - 948px/2);
+            top: 162px;
+            border: solid blue 1px;
 
-}
+        }
 
-#optimize{
-position: absolute;
-width: 948px;
-height: 200px;
-left: calc(50% - 948px/2);
-top: 0px;
+        #optimize {
+            position: absolute;
+            width: 948px;
+            height: 200px;
+            left: calc(50% - 948px/2);
+            top: 0px;
 
-font-family: 'Gilroy-Bold';
-font-size: 48px;
-line-height: 96px;
-/* or 200% */
+            font-family: 'Gilroy-Bold';
+            font-size: 48px;
+            line-height: 96px;
+            /* or 200% */
 
-text-align: center;
+            text-align: center;
 
-/* Text Color/Main text */
+            /* Text Color/Main text */
 
-color: #141414;
+            color: #141414;
 
-}
+        }
 
-#optimize_img{
-position: absolute;
-width: 173.63px;
-height: 19.91px;
-left: 397px;
-top: 167.91px;
+        #optimize_img {
+            position: absolute;
+            width: 173.63px;
+            height: 19.91px;
+            left: 397px;
+            top: 167.91px;
 
 
-/* Primary/400 */
+            /* Primary/400 */
 
-background: #005AE2;
-}
+            background: #005AE2;
+        }
 
-#personalize{
-width: 781px;
-height: 105px;
+        #personalize {
+            width: 781px;
+            height: 105px;
 
-font-family: 'Gilroy-Medium';
-font-size: 18px;
-line-height: 28px;
-/* or 156% */
+            font-family: 'Gilroy-Medium';
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
 
-text-align: center;
+            text-align: center;
 
-/* Text Color/Main text */
+            /* Text Color/Main text */
 
-color: #141414;
+            color: #141414;
 
 
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 1;
-flex-grow: 0;
-border: solid 1px red;
-margin-top: 140px;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            border: solid 1px red;
+            margin-top: 140px;
 
-}
+        }
 
-.button_div{
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 56px;
+        .button_div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 56px;
 
-width: 282px;
-height: 44px;
-padding-top: 0px;
-margin-left: 0px;
+            width: 282px;
+            height: 44px;
+            padding-top: 0px;
+            margin-left: 0px;
 
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 1;
-flex-grow: 0;
-}
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
 
-#button2{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 12px 24px;
-gap: 10px;
+        #button2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 24px;
+            gap: 10px;
 
-width: 142px;
-height: 44px;
+            width: 142px;
+            height: 44px;
 
-/* Primary/300 - base */
+            /* Primary/300 - base */
 
-background: #0065FE;
-border-radius: 100px;
-border: 0px;
-color: white;
+            background: #0065FE;
+            border-radius: 100px;
+            border: 0px;
+            color: white;
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
-}
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
 
-.learmore{
-width: 84px;
-height: 20px;
+        .learmore {
+            width: 84px;
+            height: 20px;
 
-font-family: 'Gilroy-SemiBold';
-font-size: 16px;
-line-height: 19px;
+            font-family: 'Gilroy-SemiBold';
+            font-size: 16px;
+            line-height: 19px;
 
-/* Primary/300 - base */
+            /* Primary/300 - base */
 
-color: #0065FE;
+            color: #0065FE;
 
 
-/* Inside auto layout */
+            /* Inside auto layout */
 
-flex: none;
-order: 1;
-flex-grow: 0;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
 
-}
-
-
-
-</style>
+        }
+    </style>
 
 
 </head>
@@ -448,46 +448,45 @@ flex-grow: 0;
 
 <body>
 
-<section class = "heroSection">
-	<header class= "header1">
-		<div class= "logo">
-			<img id = "logo_img1"> <span id="logo_img2"></span> <span id = "scissor">SCISSOR</span>
-		</div>
+    <section class="heroSection">
+        <header class="header1">
+            <div class="logo">
+                <img id="logo_img1"> <span id="logo_img2"></span> <span id="scissor">SCISSOR</span>
+            </div>
 
-		<ul class = "nav">
-				<li id = "myurl" >My URLs</li>
-				<li id = "features" >Features</li>
-				<li id = "pricing" >Pricing</li>
-				<li id = "analytics" >Analytics</li>
-				<li id = "faq">FAQs</li>
-		</ul>
-		<aside class = "login">
-			<div>Log in </div> <!--You need to add transform effect on hover -->
-			<button>Try for free </button>
-		</aside>
-	</header>
+            <ul class="nav">
+                <li id="myurl">My URLs</li>
+                <li id="features">Features</li>
+                <li id="pricing">Pricing</li>
+                <li id="analytics">Analytics</li>
+                <li id="faq">FAQs</li>
+            </ul>
+            <aside class="login">
+                <div>Log in </div> <!--You need to add transform effect on hover -->
+                <button>Try for free </button>
+            </aside>
+        </header>
 
-	<section class = "optimize_section">
-		<div id="optimize">Optimize Your Online Experience with Our Advanced URL Shortening Solution </div>
-		<div><img id="optimize_img"> </div>
-		<p id = "personalize"> Personalize your shortened URLs to align with your brand identity. Utilize custom slugs, branded links, and domain customization options to reinforce your brand presence and enhance user engagement. </p>
-		<div class = "button_div"> <button id="button2">Sign Up</button> <p class = "learmore">Learn more</p> </div>		
-	</section>
+        <section class="optimize_section">
+            <div id="optimize">Optimize Your Online Experience with Our Advanced URL Shortening Solution </div>
+            <div><img id="optimize_img"> </div>
+            <p id="personalize"> Personalize your shortened URLs to align with your brand identity. Utilize custom
+                slugs, branded links, and domain customization options to reinforce your brand presence and enhance user
+                engagement. </p>
+            <div class="button_div"> <button id="button2">Sign Up</button>
+                <p class="learmore">Learn more</p>
+            </div>
+        </section>
 
-</section>
+    </section>
 
-<section>
+    <section>
+        <div></div>
 
-
-</section
-
-
-
-
-
+    </section 
 </body>
 
-<footer>
-<footer>
+    <footer>
+    </footer>
 
-<html>
+    <html>
