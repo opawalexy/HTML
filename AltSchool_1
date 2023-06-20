@@ -158,10 +158,10 @@
 
         #features {
             /*position: absolute;
-            width: 72px;
-            height: 22px;
-            left: 109px;
-            top: 1px;*/
+width: 72px;
+height: 22px;
+left: 109px;
+top: 1px;*/
 
             font-family: 'Gilroy-Medium';
             font-size: 18px;
@@ -440,6 +440,103 @@
             flex-grow: 0;
 
         }
+
+        .seamless {
+            box-sizing: border-box;
+
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 60px;
+            gap: 16px;
+
+            position: absolute;
+            width: 768px;
+            height: 224px;
+            left: calc(50% - 768px/2 + 98px);
+            top: 631px;
+
+            background: rgba(254, 254, 254, 0.1);
+            /* Primary/400 */
+
+            border: 0.5px solid #005AE2;
+            backdrop-filter: blur(106px);
+            /* Note: backdrop-filter has minimal browser support */
+
+            border-radius: 24px;
+        }
+
+        .frame7 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 20px;
+
+            width: 384px;
+            height: 80px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            border: solid 1px green;
+        }
+
+        .seamless_transform {
+            width: 648px;
+            height: 48px;
+
+            font-family: 'Gilroy-Medium';
+            font-size: 16px;
+            line-height: 24px;
+            /* or 150% */
+
+            text-align: center;
+
+            /* Text Color/Main text */
+
+            color: #141414;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+            border: solid 1px purple;
+        }
+
+        .frame7_link2 {
+            width: 80px;
+            height: 80px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 0px -8px;
+        }
+
+        #frame7_link2_vector1 {
+            position: absolute;
+            left: 33.33%;
+            right: 33.33%;
+            top: 50%;
+            bottom: 50%;
+
+            /* Text Color/Main text */
+
+            border: 2px solid #141414;
+        }
     </style>
 
 
@@ -480,13 +577,19 @@
 
     </section>
 
-    <section>
-        <div></div>
+    <section class="seamless">
+        <div class="frame7">
+            <div class="frame7_link2"> <span id="frame7_link2_vector1">H</span></div>
+            <div class="frame7_link2"> <span id="frame7_link2_vector1">H</span></div>
+            <div class="frame7_link2"> <span id="frame7_link2_vector1">H</span></div>
+        </div>
+        <div class="seamless_transform"> </div>
 
-    </section 
-</body>
+        </div>
+
+    </section </body>
 
     <footer>
-    </footer>
+        <footer>
 
-    <html>
+            <html>
