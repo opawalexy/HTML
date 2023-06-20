@@ -580,8 +580,8 @@ top: 1px;*/
     <section class="seamless">
         <div class="frame7">
             <div class="frame7_link2"> <span id="frame7_link2_vector1">H</span></div>
-            <div class="frame7_link2"> <span id="frame7_link2_vector1">H</span></div>
-            <div class="frame7_link2"> <span id="frame7_link2_vector1">H</span></div>
+            <div class="frame7_link2"> <span id="frame7_link2_vector2">H</span></div>
+            <div class="frame7_link2"> <span id="frame7_link2_vector3">H</span></div>
         </div>
         <div class="seamless_transform"> </div>
 
