@@ -6,11 +6,1092 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/HTML_CSS/Assignments/Main/Asgmt_Main.css">
+
+<style>
+.heroSection {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #FFFFFF;
+    border: solid 1px red;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 140px;
+
+    position: absolute;
+    width: 1150px;
+    height: 44px;
+    left: calc(50% - 1150px/2 + 0.09px);
+    top: 12px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+
+    width: 155px;
+    height: 40px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#logo_img1 {
+    width: 24px;
+    height: 24px;
+
+    /* Primary/300 - base */
+
+    background: #0065FE;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+#logo_img2 {
+    width: 0px;
+    height: 24px;
+
+    /* Primary/300 - base */
+
+    background: #0065FE;
+    /* Primary/300 - base */
+
+    border: 2px solid #0065FE;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#scissor {
+    width: 99px;
+    height: 24px;
+
+    /* H2/Bold */
+
+    font-family: 'Gilroy-Bold';
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+
+    display: flex;
+    align-items: center;
+
+    /* Primary/300 - base */
+
+    color: #0065FE;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.nav {
+    /* Frame 1000001643 */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    width: 504px;
+    height: 24px;
+    list-style-type: none;
+    /*My addition*/
+    border: solid 0px green;
+    /*My addition*/
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+#myurl {
+    width: 90px;
+    height: 22px;
+
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+
+    /* Primary/300 - base */
+
+    color: #0065FE;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#features {
+    /*position: absolute;
+width: 72px;
+height: 22px;
+left: 109px;
+top: 1px;*/
+
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+
+    /* Text Color/Main text */
+
+    color: #141414;
+}
+
+#pricing {
+    width: 56px;
+    height: 22px;
+
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+
+    /* Text Color/Main text */
+
+    color: #141414;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+#analytics {
+    width: 76px;
+    height: 22px;
+
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+
+    /* Text Color/Main text */
+
+    color: #141414;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+#faq {
+    width: 43px;
+    height: 22px;
+
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+
+    /* Text Color/Main text */
+
+    color: #141414;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+
+.login {
+    border: solid 0px violet;
+    /*My addition*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 211px;
+    height: 44px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.login>div {
+    width: 45px;
+    height: 20px;
+
+    font-family: 'Gilroy-SemiBold';
+    font-size: 16px;
+    line-height: 19px;
+
+    /* Primary/300 - base */
+
+    color: #0065FE;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.login>button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 10px;
+
+    width: 142px;
+    height: 44px;
+
+
+    /* Primary/300 - base */
+
+    background: #0065FE;
+    border-radius: 100px;
+    border: 0px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+
+}
+
+#button_text {
+    width: 79px;
+    height: 12px;
+
+    font-family: 'Gilroy-SemiBold';
+    font-size: 16px;
+    line-height: 12px;
+    /* identical to box height, or 75% */
+
+
+    /* Neutral/White */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.optimize_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    position: absolute;
+    width: 948px;
+    height: 389px;
+    left: calc(50% - 948px/2);
+    top: 162px;
+    border: solid 1px green;
+    /*My addition*/
+}
+
+.optimize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 948px;
+    height: 313px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.group1 {
+    width: 948px;
+    height: 200px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.group1>div {
+    border: solid 1px red;
+    /*My addition*/
+    position: absolute;
+    width: 948px;
+    height: 200px;
+    left: calc(50% - 948px/2);
+    top: 0px;
+
+    font-family: 'Gilroy-Bold';
+    font-size: 48px;
+    line-height: 96px;
+    /* or 200% */
+
+    text-align: center;
+
+    /* Text Color/Main text */
+
+    color: #141414;
+}
+
+.group1>img {
+
+    position: absolute;
+    width: 173.63px;
+    height: 19.91px;
+    left: 397px;
+    top: 167.91px;
+
+    /* Primary/400 */
+
+    background: #005AE2;
+    margin-top: 10px;
+    /*My addition*/
+}
+
+
+
+.personalize {
+    width: 781px;
+    height: 105px;
+
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+
+    text-align: center;
+
+    /* Text Color/Main text */
+
+    color: #141414;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border: solid 1px purple;
+    /*my addition*/
+    margin: -15px 83.5px 0px 83.5px;
+    /*329.5 - 246 on both left and right, my addition*/
+    padding: 0px;
+    /*my addition*/
+}
+
+.personalize>p {
+    margin-left: 40px;
+    /*my addition*/
+    margin-right: 40px;
+    /*my addition*/
+}
+
+.signup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 56px;
+
+    width: 282px;
+    height: 44px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-top: 40px;
+    /*myaddition*/
+}
+
+.signup>button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 10px;
+
+    width: 142px;
+    height: 44px;
+
+    /* Primary/300 - base */
+
+    background: #0065FE;
+    border-radius: 100px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-left: 375px;
+    /*621-246px my addition */
+
+}
+
+.signup>button>span {
+    width: 57px;
+    height: 12px;
+
+    font-family: 'Gilroy-SemiBold';
+    font-size: 16px;
+    line-height: 12px;
+    /* identical to box height, or 75% */
+
+
+    /* Neutral/White */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.signup>p {
+    width: 84px;
+    height: 20px;
+
+    font-family: 'Gilroy-SemiBold';
+    font-size: 16px;
+    line-height: 19px;
+
+    /* Primary/300 - base */
+
+    color: #0065FE;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.group2 {
+    position: absolute;
+    width: 833px;
+    height: 336.57px;
+    left: calc(50% - 833px/2 + 65.5px);
+    top: 607px;
+    border: solid 0px blue;
+    /*my addition*/
+    /*my addition*/
+    /*my addition*/
+}
+
+.group2-frame {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 60px;
+    gap: 16px;
+
+    position: absolute;
+    width: 768px;
+    height: 224px;
+    left: calc(50% - 768px/2 + 98px);
+    top: 631px;
+
+    background: rgba(254, 254, 254, 0.1);
+    /* Primary/400 */
+
+    border: 0.5px solid #005AE2;
+    backdrop-filter: blur(106px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 24px;
+}
+
+.group2-frame-frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+
+    width: 384px;
+    height: 80px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: solid 1px red;
+    /*my addition*/
+
+}
+
+.group2-frame-frame-frame7 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 224px;
+    height: 80px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: solid 1px black;
+    /*my addition*/
+}
+
+.link2 {
+    width: 80px;
+    height: 80px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px -8px;
+}
+
+.link2_img1 {
+    position: absolute;
+    left: 33.33%;
+    right: 33.33%;
+    top: 50%;
+    bottom: 50%;
+
+    /* Text Color/Main text */
+
+    border: 2px solid #141414;
+}
+
+.link2_img2 {
+    position: absolute;
+    left: 4.17%;
+    right: 4.17%;
+    top: 29.17%;
+    bottom: 29.17%;
+
+    /* Text Color/Main text */
+
+    border: 2px solid #141414;
+}
+
+#link7 {
+    width: 40px;
+    height: 0px;
+
+    /* Primary/400 */
+
+    border: 2px solid #005AE2;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.seamless_transform {
+    width: 648px;
+    height: 48px;
+
+    font-family: 'Gilroy-Medium';
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    text-align: center;
+
+    /* Text Color/Main text */
+
+    color: #141414;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+.group2-vector2 {
+    position: absolute;
+    width: 238.55px;
+    height: 251.2px;
+    left: 369px;
+    top: 725.63px;
+
+    background: #E2E9F0;
+    transform: rotate(-29.82deg);
+    margin-left: 135.33px;
+    /*my addition not working*/
+
+}
+
+.group3 {
+    position: absolute;
+    width: 1440px;
+    height: 93px;
+    left: 0px;
+    top: 931px;
+    border: solid 1px black;
+    /*my addition*/
+}
+
+.eclipse {
+    position: absolute;
+    width: 956px;
+    height: 49px;
+    left: 256px;
+    top: 951px;
+
+    background: linear-gradient(180deg, rgba(226, 233, 240, 0.7) 10.68%,
+            rgba(220, 228, 235, 0.7) 44.01%, rgba(226, 233, 240, 0) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(18, 36, 89, 0.35));
+    border: solid 100px green;
+    /*my addition*/
+
+}
+
+.rectangle {
+    position: absolute;
+    width: 1440px;
+    height: 93px;
+    left: 0px;
+    top: 931px;
+
+    background: #F8F7F7;
+    border: solid 10px red;
+    /*my addition*/
+}
+
+.desktop-10 {
+    position: relative;
+    width: 1440px;
+    height: 982px;
+
+    background: #FFFFFF;
+}
+
+.desktop-10-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 140px;
+    gap: 120px;
+
+    position: absolute;
+    width: 1446px;
+    height: 220px;
+    left: calc(50% - 1446px/2);
+    top: 0px;
+
+    background: #F9FBFD;
+}
+
+.desktop-10-OneStop {
+    width: 337px;
+    height: 96px;
+
+    font-family: 'Gilroy-Bold';
+    font-size: 40px;
+    line-height: 48px;
+    /* or 120% */
+
+
+    /* Text Color/Main text */
+
+    color: #141414;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.desktop-10{
+position: relative;
+width: 1440px;
+height: 982px;
+
+
+background: #FFFFFF;
+border: solid 1px red;
+}
+
+.desktop-10-frame1{
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 60px 140px;
+gap: 120px;
+
+position: absolute;
+width: 1160px;
+height: 220px;
+left: calc(50% - 1446px/2);
+top: 0px;
+
+background: #F9FBFD;
+border: solid 1px blue;
+margin-right: 0px;  
+}
+
+.onestop_container{
+width: 337px;
+height: 96px;
+border: solid 1px blue;
+
+/* Text Color/Main text */
+color: #141414;
+font-family: 'Gilroy-Bold';
+font-size: 40px;
+line-height: 48px;
+/* or 120% */
+}
+
+.onestop_container>span{
+color: #005AE2;
+}
+
+
+.stat_container{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 72px;
+width: 709px;
+height: 100px;
+border: solid 1px blue;
+}
+
+
+.stat_text1{
+font-family: 'Gilroy-SemiBold';
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+
+
+/* Text Color/Main text */
+
+color: #141414;
+}
+
+
+.stat_text2{
+font-family: 'Gilroy-Medium';
+font-size: 16px;
+line-height: 24px;
+}
+
+.desktop-10-frame2{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 96px;
+
+position: absolute;
+width: 1202.1px;
+height: 504px;
+left: 120px;
+top: 348px;
+border: solid 1px green; 
+}
+
+
+.whyscissors_container{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 398.1px;
+height: 256px;
+border: solid 1px red;
+}
+
+
+#whyscissors_container-text1{
+font-family: 'Gilroy-Bold';
+font-size: 40px;
+line-height: 32px;
+color: #141414;
+font-weight: 900px;
+margin: 0em 0em 0em 0px;
+padding-left: 16px;
+border-left: solid 3px;
+border-radius-left: 20%;
+}
+
+/*16px = 1em*/
+#whyscissors_container-text2{
+font-family: 'Gilroy-Medium';
+font-size: 1em;
+line-height: 1.75em;
+margin-top: 0px;
+margin-left: 2em; 
+color: #141414;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+#Scissors_text{
+color: #005AE2
+}
+
+.fourBoxes_container{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 64px;
+
+width: 708px;
+height: 504px;
+border: solid 1px blue;
+}
+
+.twoBoxes_frame1{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 1px;
+
+width: 708px;
+height: 220px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.url_short {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 0px;
+
+width: 340px;
+height: 220px;
+border: solid 1px green;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#p1{
+font-family: 'Gilroy-SemiBold';
+font-size: 32px;
+line-height: 28px;
+padding: 0px;
+margin: 0px;
+}
+
+#img_1{
+margin-bottom: 2em;
+}
+
+.url_custom {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 0px;
+
+width: 340px;
+height: 211px;
+margin-left: 30px;
+border: solid 1px green;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#p3{
+font-family: 'Gilroy-SemiBold';
+font-size: 32px;
+line-height: 28px;
+padding: 0px;
+margin: 0px;
+}
+
+#img_2{
+margin-bottom: 2em;
+}
+
+.twoBoxes_frame2{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 28px;
+
+width: 708px;
+height: 220px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+border: solid 1px orange;
+}
+
+.qr_code {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 0px;
+
+width: 340px;
+height: 220px;
+border: solid 1px green;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#p5{
+font-family: 'Gilroy-SemiBold';
+font-size: 32px;
+line-height: 28px;
+padding: 0px;
+margin: 0px;
+}
+
+#img_3{
+margin-bottom: 2em;
+}
+.data_analytics {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 0px;
+
+width: 340px;
+height: 220px;
+margin-left: 0px;
+border: solid 1px green;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#p7{
+font-family: 'Gilroy-SemiBold';
+font-size: 32px;
+line-height: 28px;
+padding: 0px;
+margin: 0px;
+}
+
+#img_4{
+margin-bottom: 2em;
+}
+
+
+</style>
 </head>
 
 <body>
-
-    <body>
 
         <section class="heroSection">
             <header class="header">
@@ -89,13 +1170,53 @@
             </section>
 
         </section>
-        <section class="desktop-10">
-            <article class="desktop-10-frame">
-                <p class="desktop-10-OneStop">One Stop. Four Possibilities.</p>
 
+	<section class="desktop-10">
+            <article class="desktop-10-frame1">
+		<div class = "onestop_container">One Stop. Four <span>Possibilities<span>.</div>
+		<div class = "stat_container">
+			<div><span class = "stat_text1">3M</span> <p class = "stat_text2">Active users</p></div>
+			<div><span class = "stat_text1">60M</span><p class = "stat_text2">Links & QR codes created</p></div>
+			<div><span class = "stat_text1">1B</span><p class = "stat_text2">Clicked & Scanned connections</p></div>
+			<div><span class = "stat_text1">300K</span><p class = "stat_text2">App Integrations</p></div>		
+		</div>        
             </article>
 
+            <article class="desktop-10-frame2">
+		<div class= "whyscissors_container"><img><div id = "whyscissors_container-text1">Why choose <span id = "Scissors_text">Scissors</span></div><p id = "whyscissors_container-text2">Scissors is the hub of everything that has to do with your link management. We shorten your URLs, allow you creating custom ones for your personal, business, event usage. Our swift QR code creation, management and usage tracking with advance analytics for all of these is second to none. </p></div>
+		<div class= "fourBoxes_container">
+			<div class="twoBoxes_frame1">
+				<div class = "url_short"><img id = "img_1" src = "C:\Users\woparinde\Documents\WALE - START\PYTHON\Alt SCHOOL\Assignment\Ellipse 2.svg">
+					<p id = "p1">URL Shortening</p>
+					<p id = "p2">Scissor allows you to shorten URLs of your business, events. Shorten your URL at scale, URL redirects.</p>
+				</div>
+				<div class = "url_custom"><img id = "img_2" src = "C:\Users\woparinde\Documents\WALE - START\PYTHON\Alt SCHOOL\Assignment\Ellipse 2.svg">
+					<p id = "p3">Custom URLs</p>
+					<p id = "p4">With Scissor, you can create custom URLs, with the length you want! A solution for socials and businesses.</p>
+				</div>
+				
+			</div>
+			<div class="twoBoxes_frame2">
+				<div class = "qr_code"><img id = "img_3"  src = "C:\Users\woparinde\Documents\WALE - START\PYTHON\Alt SCHOOL\Assignment\Ellipse 2.svg">
+					<p id = "p5">QR Codes</p>
+					<p id = "p6">Generate QR codes to your business, events. Bring your audience and customers to your doorstep with this scan and go solution.</p>
+				</div>
+				<div class = "data_analytics"><img id = "img_4"  src = "C:\Users\woparinde\Documents\WALE - START\PYTHON\Alt SCHOOL\Assignment\Ellipse 2.svg">
+					<p id = "p7">Data Analytics</p>
+					<p id = "p8">Receive data on the usage of either your shortened URL, custom URLs or generated QR codes. Embedded to monitor progress.</p>
+				</div>
+				
+			</div>
+
+
+		</div>
+               
+            </article>
+           
         </section>
+        
+
+
     </body>
 
 </html>
